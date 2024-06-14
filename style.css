@@ -1,0 +1,98 @@
+
+/* nav{
+    background-color: purple;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+} */
+html,body {
+  min-height: 100vh;
+}
+h1{
+    text-align: center;
+    margin: 0 0 30px;
+    background-color: orangered;
+    padding: 7px;
+}
+.gameContainer{
+    clear: left;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+.box{
+    border: 2px solid black;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 3em;
+    height:50px;
+    width:50px;
+}
+#info{
+    text-align: center;
+    font-size: 40px;
+    position: relative; left: -13%;
+
+}
+.box:hover{
+    background-color: aquamarine;
+}
+#b1{
+    border-left: none;
+    border-top: none;
+}
+#b2{
+    border-top: none;
+}
+#b3{
+    border-right: none;
+    border-top: none;
+}
+#b4{
+    border-left: none;
+}
+#b6{
+    border-right: none;
+}
+#b7{
+    border-left: none;
+    border-bottom: none;
+}
+#b8{
+    border-bottom: none;
+}
+#b9{
+    border-right: none;
+    border-bottom: none;
+}
+button{
+    padding: 4px 30px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+#reset{
+    display: block;
+    position: relative; left: -13%;
+    margin: 20px auto 0;
+}
+#img{
+    width: 250px;
+    height: 170px;
+    background-color: transparent;
+    margin: 20px 0 0 100px;
+    background-size: 100% 100%;
+}
+@media only screen and (max-width:500px) {
+    #info{
+        left: 10%;
+    }
+    #reset{
+        margin: auto;
+    }
+}
